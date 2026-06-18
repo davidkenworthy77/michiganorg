@@ -31,7 +31,7 @@ export default function Slide05DiscoveryChanged() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease, delay: T_TITLE }}
-          className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-bone-50 leading-tight mx-auto text-center max-w-5xl"
+          className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-ink-900 leading-tight mx-auto text-center max-w-5xl"
         >
           Discovery used to have one door.{' '}
           <span className="text-ember-500">Now it has dozens.</span>
@@ -45,26 +45,26 @@ export default function Slide05DiscoveryChanged() {
             transition={{ duration: 0.7, ease, delay: T_THEN }}
             className="flex flex-col"
           >
-            <div className="font-mono text-[10px] tracking-looser uppercase text-bone-100/40 mb-3">
+            <div className="font-mono text-[10px] tracking-looser uppercase text-ink-700/50 mb-3">
               Then
             </div>
-            <div className="rounded-xl border border-bone-100/15 bg-bone-100/[0.03] p-4">
+            <div className="rounded-xl border border-ink-900/12 bg-ink-900/[0.03] p-4">
               <div className="flex gap-1.5 mb-3">
-                <span className="w-2 h-2 rounded-full bg-bone-100/25" />
-                <span className="w-2 h-2 rounded-full bg-bone-100/25" />
-                <span className="w-2 h-2 rounded-full bg-bone-100/25" />
+                <span className="w-2 h-2 rounded-full bg-ink-900/20" />
+                <span className="w-2 h-2 rounded-full bg-ink-900/20" />
+                <span className="w-2 h-2 rounded-full bg-ink-900/20" />
               </div>
               <div className="space-y-2">
-                <div className="h-2.5 rounded bg-bone-100/15 w-3/4" />
-                <div className="h-2.5 rounded bg-bone-100/10 w-full" />
-                <div className="h-2.5 rounded bg-bone-100/10 w-5/6" />
-                <div className="h-14 rounded bg-bone-100/[0.07] w-full mt-3" />
+                <div className="h-2.5 rounded bg-ink-900/12 w-3/4" />
+                <div className="h-2.5 rounded bg-ink-900/[0.08] w-full" />
+                <div className="h-2.5 rounded bg-ink-900/[0.08] w-5/6" />
+                <div className="h-14 rounded bg-ink-900/[0.06] w-full mt-3" />
               </div>
             </div>
-            <div className="font-display text-base md:text-lg text-bone-50 mt-4 leading-snug">
+            <div className="font-display text-base md:text-lg text-ink-900 mt-4 leading-snug">
               One website.
             </div>
-            <div className="text-sm text-bone-100/55 leading-snug mt-1">
+            <div className="text-sm text-ink-700/70 leading-snug mt-1">
               One set of pages, for everyone.
             </div>
           </motion.div>
@@ -94,10 +94,10 @@ export default function Slide05DiscoveryChanged() {
                   initial={{ opacity: 0, scale: 0.85 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.45, ease, delay: T_NOW + i * 0.08 }}
-                  className="flex items-center gap-2 rounded-lg border border-ember-500/25 bg-ink-800/80 px-3.5 py-2.5"
+                  className="flex items-center gap-2 rounded-lg border border-ember-500/25 bg-white/70 px-3.5 py-2.5"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-ember-500 shrink-0" />
-                  <span className="text-bone-50 text-sm md:text-[15px] leading-tight">{s}</span>
+                  <span className="text-ink-900 text-sm md:text-[15px] leading-tight">{s}</span>
                 </motion.div>
               ))}
               {/* + more, to imply the list keeps growing */}
@@ -105,12 +105,12 @@ export default function Slide05DiscoveryChanged() {
                 initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.45, ease, delay: T_NOW + surfaces.length * 0.08 }}
-                className="flex items-center gap-2 rounded-lg border border-dashed border-bone-100/20 px-3.5 py-2.5"
+                className="flex items-center gap-2 rounded-lg border border-dashed border-ink-900/20 px-3.5 py-2.5"
               >
-                <span className="text-bone-100/50 text-sm md:text-[15px] leading-tight">+ and counting</span>
+                <span className="text-ink-700/55 text-sm md:text-[15px] leading-tight">+ and counting</span>
               </motion.div>
             </div>
-            <div className="text-sm text-bone-100/55 leading-snug mt-4">
+            <div className="text-sm text-ink-700/70 leading-snug mt-4">
               Trips now start in the answer — and travelers arrive expecting a conversation built for them.
             </div>
           </div>

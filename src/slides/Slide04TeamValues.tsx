@@ -52,7 +52,7 @@ export default function Slide04TeamValues() {
               <span className="font-mono text-sm tracking-looser text-ember-500/70 tabular-nums">
                 {v.n}
               </span>
-              <span className="font-display font-medium text-display-sm md:text-display tracking-tighter text-bone-50 leading-[0.95]">
+              <span className="font-display font-medium text-display-sm md:text-display tracking-tighter text-ink-900 leading-[0.95]">
                 {v.word}
               </span>
             </motion.div>
@@ -63,9 +63,9 @@ export default function Slide04TeamValues() {
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease, delay: T_FLIP }}
-          className="mt-14 border-t border-bone-100/15 pt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
+          className="mt-14 border-t border-ink-900/15 pt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
         >
-          <p className="font-display font-medium text-2xl md:text-3xl tracking-tight text-bone-50 max-w-xl leading-tight">
+          <p className="font-display font-medium text-2xl md:text-3xl tracking-tight text-ink-900 max-w-xl leading-tight">
             For Michigan, that means{' '}
             <span className="text-ember-500">no brand drift, less risk, more economic impact.</span>
           </p>

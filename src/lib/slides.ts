@@ -31,7 +31,7 @@ export const SLIDES: SlideMeta[] = [
     notes: `(People wave as Casey names what they do.) "The people you see on your screen today are the ones who'll do the work. Leaders in the digital space who are out there right now as a voice for where this industry is heading. (Dave waves.) Content specialists who'll define what actually wins on a web filling up with slop. The technical minds who make sure Michigan shows up where the answers get formed. (Sean waves.) Global leadership betting our future on this space and in love with this industry. (Katie waves.) Creative leadership that keeps every pixel unmistakably Pure Michigan. (Rick waves.) And the partnership muscle that's in it for the long game. (Justin waves.)"`,
   },
   {
-    id: '04', slug: 'team-values', label: 'THE TEAM', title: 'A team of people who', theme: 'dark',
+    id: '04', slug: 'team-values', label: 'THE TEAM', title: 'A team of people who', theme: 'light',
     notes: `"And every one of them shares three things. They care. They push the bleeding edge. And they want to be better every single day. For Michigan that means no ramp, no brand drift, and far less risk, because nobody on this call is learning you on your clock. The team that's protected Pure Michigan for four years, ready to build what's next." Handoff: "Here's how we see that chapter." → Dave.`,
   },
 
@@ -49,7 +49,7 @@ export const SLIDES: SlideMeta[] = [
     notes: `"Stack all of that up and it comes down to one word: trust. Travelers don't fully trust DMOs to give them the experience they now expect. And here's the harder part. The machines don't trust us either. When an AI answers a question about Michigan, it's often not pulling from the DMO, it's pulling from everyone else. So we've got a trust gap on two fronts at the same time: the people, and the systems now answering on our behalf."`,
   },
   {
-    id: '08', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'dark',
+    id: '08', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'light',
     notes: `"The way people find a trip has changed. They're not starting on a homepage anymore, they're starting in ChatGPT, Gemini, Perplexity, in the AI answer sitting at the top of Google. And the information they pull lives everywhere now: social, LLMs, agents acting on their behalf, PR. They arrive expecting a conversation and an experience built for them. The old model, one site with one set of pages for everyone, just doesn't meet them where they are."`,
   },
   {
