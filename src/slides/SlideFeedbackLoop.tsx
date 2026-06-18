@@ -36,7 +36,7 @@ const loopNodes: LoopNode[] = [
   {
     num: '04',
     title: 'The system adapts',
-    body: 'content expands, audiences refine.',
+    body: 'content expands, audiences refine, other channels benefit.',
     position: 'left',
   },
 ]
@@ -56,19 +56,21 @@ const cy = H / 2
 const radius = 140
 
 export default function SlideFeedbackLoop() {
-  const meta = SLIDES[10]
+  const meta = SLIDES[11]
 
   const T_TITLE = 0.2
   const T_RING = 0.9
   const T_NODES = 1.6
   const T_CAPTION = 4.6
+  // Pills come in last — a beat after the loop has finished drawing.
+  const T_PILLS = T_CAPTION + 0.9
 
   // Compute per-node start times for the arc-segment animation
   const segmentDelays = loopNodes.map((_, i) => T_NODES + i * 0.7 + 0.4)
 
   return (
     <Slide meta={meta}>
-      <div className="flex-1 flex flex-col">
+      <div className="flex-1 flex flex-col relative">
         {/* Title */}
         <motion.h2
           initial={{ opacity: 0, y: 14 }}
@@ -79,6 +81,22 @@ export default function SlideFeedbackLoop() {
           Every interaction makes the platform{' '}
           <span className="text-ember-500">smarter.</span>
         </motion.h2>
+
+        {/* Channels that benefit from the loop */}
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-3">
+          {['PR', 'Media', 'Social', "LLMs"].map((c, i) => (
+            <motion.div
+              key={c}
+              initial={{ opacity: 0, x: -12 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5, ease, delay: T_PILLS + i * 0.12 }}
+              className="flex items-center gap-2.5 rounded-full border border-ink-900/12 bg-white/60 pl-3.5 pr-5 py-2"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-ember-500" />
+              <span className="text-sm font-medium text-ink-900">{c}</span>
+            </motion.div>
+          ))}
+        </div>
 
         {/* Loop diagram */}
         <div className="flex-1 flex items-center justify-center mt-4">

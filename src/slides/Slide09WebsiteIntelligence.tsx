@@ -45,7 +45,7 @@ const nodes: Node[] = channels.map((label, i) => {
 })
 
 export default function Slide09WebsiteIntelligence() {
-  const meta = SLIDES[9]
+  const meta = SLIDES[10]
   const T_TITLE = 0.2
   const T_CENTER = 0.9
   const T_SPOKES = 1.5
@@ -138,7 +138,7 @@ export default function Slide09WebsiteIntelligence() {
             >
               <div className="flex flex-col items-center gap-2 text-bone-50">
                 <Sparkle className="w-6 h-6 text-ember-500" />
-                <div className="font-display font-medium text-bone-50 text-lg md:text-xl tracking-tight">
+                <div className="font-display font-medium text-bone-50 text-base md:text-lg tracking-tight">
                   michigan.org
                 </div>
                 <div className="font-mono text-[9px] md:text-[10px] tracking-looser uppercase text-bone-100/70">

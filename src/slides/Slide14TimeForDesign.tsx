@@ -48,7 +48,7 @@ export default function Slide14TimeForDesign() {
           transition={{ duration: 0.7, ease, delay: 0.1 }}
           className="font-mono text-xs tracking-looser uppercase text-ember-500 mb-10"
         >
-          That's the foundation handled
+          A strong vision and foundation
         </motion.div>
 
         <motion.button
@@ -59,13 +59,13 @@ export default function Slide14TimeForDesign() {
           transition={{ duration: 0.8, ease, delay: 0.3 }}
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
-          className="group relative inline-flex items-center gap-5 rounded-full bg-gradient-to-r from-ember-600 via-ember-500 to-glow-500 px-12 md:px-16 py-7 md:py-9 shadow-[0_0_60px_rgba(255,74,28,0.35)]"
+          className="group relative inline-flex items-center gap-4 rounded-full bg-gradient-to-r from-ember-600 via-ember-500 to-glow-500 px-10 md:px-12 py-5 md:py-6 shadow-[0_0_60px_rgba(255,74,28,0.35)]"
         >
-          <span className="font-display font-medium text-3xl md:text-5xl lg:text-6xl tracking-tight text-bone-50">
-            Here is our solution
+          <span className="font-display font-medium text-2xl md:text-4xl tracking-tight text-bone-50">
+            Let's see it
           </span>
           <motion.svg
-            width="40" height="20" viewBox="0 0 40 20" fill="none" stroke="currentColor" strokeWidth="2"
+            width="34" height="18" viewBox="0 0 40 20" fill="none" stroke="currentColor" strokeWidth="2"
             strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"
             className="text-bone-50"
             animate={{ x: [0, 8, 0] }}

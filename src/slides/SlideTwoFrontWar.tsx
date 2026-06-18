@@ -89,7 +89,7 @@ export default function SlideTwoFrontWar() {
           transition={{ duration: 0.8, ease, delay: T_TITLE }}
           className="font-display font-medium text-4xl md:text-5xl lg:text-6xl tracking-tight text-bone-100/90 leading-tight mx-auto text-center max-w-5xl lg:max-w-6xl xl:max-w-7xl"
         >
-          Michigan.org is losing on{' '}
+          michigan.org is losing on{' '}
           <span className="text-ember-500">two fronts.</span>
         </motion.h2>
 

@@ -48,7 +48,8 @@ export default function Slide02WeKnowMichigan() {
           <span className="text-ember-500">knows you.</span>
         </motion.h2>
 
-        <div className="flex-1 grid md:grid-cols-3 gap-6 md:gap-8 mt-14 md:mt-16 max-w-6xl mx-auto w-full items-stretch">
+        <div className="flex-1 flex items-center mt-10 md:mt-12">
+          <div className="grid md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto w-full items-stretch">
           {facts.map((f, i) => {
             const base = T_CARDS + i * 0.25
             return (
@@ -72,6 +73,7 @@ export default function Slide02WeKnowMichigan() {
               </motion.div>
             )
           })}
+          </div>
         </div>
 
         <motion.p

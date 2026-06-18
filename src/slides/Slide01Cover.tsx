@@ -38,7 +38,7 @@ export default function Slide01Cover() {
           className="self-start inline-flex items-center gap-5 md:gap-6"
         >
           <img
-            src="/logos/purem_white.png"
+            src="/logos/PM-white.svg"
             alt="Pure Michigan"
             className="h-7 md:h-9 w-auto"
           />

@@ -59,20 +59,16 @@ export const SLIDES: SlideMeta[] = [
 
   // ----- SECTION 3 — DESTINATION INTELLIGENCE -----
   {
-    id: '10', slug: 'website-is-intelligence', label: 'DESTINATION INTELLIGENCE', title: 'The website is the intelligence', theme: 'light',
+    id: '10', slug: 'future', label: 'HOW WE WIN', title: 'What does the future of michigan.org look like?', theme: 'dark',
+    notes: `Transition into the solution. "So that's where we are. The question is: what does the future of michigan.org actually look like — and how does a destination win from here? That's what the rest of this is about." Then into the website-as-intelligence reframe.`,
+  },
+  {
+    id: '11', slug: 'website-is-intelligence', label: 'DESTINATION INTELLIGENCE', title: 'The website is the intelligence', theme: 'light',
     notes: `"Here's the shift. Stop picturing michigan.org as a website, a stack of pages people visit. Picture it as the destination's intelligence. One living, structured source of truth about Michigan. The site is the engine, and everything else feeds from it: the LLMs, the agents, social, email, PR, the paid media. Build it once and build it right, and Michigan shows up accurate and on-brand everywhere a traveler or a machine is asking. The website stops being a destination you visit and becomes the brain behind all of it."`,
   },
   {
-    id: '11', slug: 'feedback-loop', label: 'THE LOOP', title: 'Every interaction makes it smarter', theme: 'light',
+    id: '12', slug: 'feedback-loop', label: 'THE LOOP', title: 'Every interaction makes it smarter', theme: 'light',
     notes: `"Here's what makes it compound. Every interaction is a signal. Humans interact with the site, the concierge, the content. Bots query through schema and structured data. The platform learns what people ask and what works. And the system adapts — content expands, audiences refine. Then it runs again. The longer it runs, the more it knows; the more it knows, the better it performs. We manage michigan.org like a living organization, not a static brochure."`,
-  },
-  {
-    id: '12', slug: 'three-words', label: 'HOW WE WIN', title: 'Trust. Taste. Ownability.', theme: 'dark',
-    notes: `"So how does a destination actually win in this world? Three words.
-Trust. You become the source the answers are built from, so when anyone, a person or an AI, asks about Michigan, it traces back to you.
-Taste. Anyone can be accurate. Only Michigan can sound like Michigan, and that point of view is the one thing AI can't fake.
-Ownability. You claim the questions that are yours to win, the fall color drive, the Great Lakes summer, and you own them.
-Trust gets you cited. Taste gets you chosen. Ownability keeps you the answer. If you take three words out of today, take those." Handoff: "Before any of that, you asked us three direct questions. Let me hand to Sean." → Sean.`,
   },
 
   // ----- SECTION 4 — TRAFFIC, SECURITY, CONSENT, ADA -----

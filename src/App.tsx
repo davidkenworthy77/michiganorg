@@ -19,9 +19,9 @@ import Slide06TrustGap from './slides/Slide06TrustGap'
 import Slide07BotsOutnumber from './slides/Slide07BotsOutnumber'
 
 // Section 3 — Destination Intelligence
+import SlideFuture from './slides/SlideFuture'
 import Slide09WebsiteIntelligence from './slides/Slide09WebsiteIntelligence'
 import SlideFeedbackLoop from './slides/SlideFeedbackLoop'
-import Slide10ThreeWords from './slides/Slide10ThreeWords'
 
 // Section 4 — Traffic, Security, Consent, ADA
 import SlideVisibility from './slides/SlideVisibility'
@@ -40,9 +40,9 @@ const slideComponents: Record<string, () => ReactElement> = {
   '07': Slide06TrustGap,
   '08': Slide05DiscoveryChanged,
   '09': Slide07BotsOutnumber,
-  '10': Slide09WebsiteIntelligence,
-  '11': SlideFeedbackLoop,
-  '12': Slide10ThreeWords,
+  '10': SlideFuture,
+  '11': Slide09WebsiteIntelligence,
+  '12': SlideFeedbackLoop,
   '13': SlideVisibility,
   '14': Slide12SecureByDesign,
   '15': Slide14TimeForDesign,
