@@ -11,7 +11,7 @@ const DEMO_URL = 'https://michigan-blue.vercel.app/'
 // ─────────────────────────────────────────────────────────────
 
 export default function Slide14TimeForDesign() {
-  const meta = SLIDES[13]
+  const meta = SLIDES[14]
 
   function launch() {
     if (DEMO_URL) {

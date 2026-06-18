@@ -63,7 +63,11 @@ export const SLIDES: SlideMeta[] = [
     notes: `"Here's the shift. Stop picturing michigan.org as a website, a stack of pages people visit. Picture it as the destination's intelligence. One living, structured source of truth about Michigan. The site is the engine, and everything else feeds from it: the LLMs, the agents, social, email, PR, the paid media. Build it once and build it right, and Michigan shows up accurate and on-brand everywhere a traveler or a machine is asking. The website stops being a destination you visit and becomes the brain behind all of it."`,
   },
   {
-    id: '11', slug: 'three-words', label: 'HOW WE WIN', title: 'Trust. Taste. Ownability.', theme: 'dark',
+    id: '11', slug: 'feedback-loop', label: 'THE LOOP', title: 'Every interaction makes it smarter', theme: 'light',
+    notes: `"Here's what makes it compound. Every interaction is a signal. Humans interact with the site, the concierge, the content. Bots query through schema and structured data. The platform learns what people ask and what works. And the system adapts — content expands, audiences refine. Then it runs again. The longer it runs, the more it knows; the more it knows, the better it performs. We manage michigan.org like a living organization, not a static brochure."`,
+  },
+  {
+    id: '12', slug: 'three-words', label: 'HOW WE WIN', title: 'Trust. Taste. Ownability.', theme: 'dark',
     notes: `"So how does a destination actually win in this world? Three words.
 Trust. You become the source the answers are built from, so when anyone, a person or an AI, asks about Michigan, it traces back to you.
 Taste. Anyone can be accurate. Only Michigan can sound like Michigan, and that point of view is the one thing AI can't fake.
@@ -73,17 +77,17 @@ Trust gets you cited. Taste gets you chosen. Ownability keeps you the answer. If
 
   // ----- SECTION 4 — TRAFFIC, SECURITY, CONSENT, ADA -----
   {
-    id: '12', slug: 'visibility', label: 'THE NEW SCOREBOARD', title: 'Visibility is the new traffic', theme: 'light',
+    id: '13', slug: 'visibility', label: 'THE NEW SCOREBOARD', title: 'Visibility is the new traffic', theme: 'light',
     notes: `"We know website traffic has been falling, and that's a real concern. But here's the reframe: traffic was only ever measuring one surface — your website. The new scoreboard is visibility: your destination's presence across every place a person or a machine forms an opinion of Michigan. Website traffic is just one grey line. Add LLM citations, agent traffic, social, earned — and the sum, the orange line, is what actually matters, and it's growing. So the new metrics aren't pageviews. They're share of voice in the discovery conversations, owning how Michigan is perceived, being wherever the traveler is asking, and funding the knowledge and point of view that everything else draws from."`,
   },
   {
-    id: '13', slug: 'secure-accessible', label: 'SECURE & ACCESSIBLE', title: 'Secure & accessible', theme: 'dark',
+    id: '14', slug: 'secure-accessible', label: 'SECURE & ACCESSIBLE', title: 'Secure & accessible', theme: 'dark',
     notes: `"Two things have to be true at once: the site has to be accessible, and it has to be secure. Accessible in every sense of the word — findable to the machines, with clean schema and structured data so LLMs and agents read Michigan accurately, and accessible to people, meeting WCAG 2.1 AA at 90% or higher, screen-reader and keyboard tested. And secure — firewall, intrusion prevention and vulnerability scanning, high availability and uptime, and privacy, consent and data governance that stays compliant as the rules change. Everything we do, we do within the rules."`,
   },
 
   // ----- TRANSITION → LIVE DEMO -----
   {
-    id: '14', slug: 'time-for-design', label: 'LIVE DEMO', title: 'Time for some design', theme: 'dark',
+    id: '15', slug: 'time-for-design', label: 'LIVE DEMO', title: 'Time for some design', theme: 'dark',
     notes: `"That's the foundation handled. Now the fun part." → Click the button, go live into the demo. Everything past this point is live: Front Horizon + design, the AI Concierge, individualization, then the engine. One person shares screen for the whole demo.`,
   },
 ]

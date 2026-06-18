@@ -21,7 +21,7 @@ const metrics = [
 ]
 
 export default function SlideVisibility() {
-  const meta = SLIDES[11]
+  const meta = SLIDES[12]
   const T_TITLE = 0.2
   const T_SUB = 0.6
   const T_CHART = 1.1

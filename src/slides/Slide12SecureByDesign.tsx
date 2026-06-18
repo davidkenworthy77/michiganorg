@@ -82,7 +82,7 @@ const cards: {
 ]
 
 export default function Slide12SecureByDesign() {
-  const meta = SLIDES[12]
+  const meta = SLIDES[13]
   const T_TITLE = 0.2
   const T_SCENE = 0.8
   const T_CARDS = 1.7
