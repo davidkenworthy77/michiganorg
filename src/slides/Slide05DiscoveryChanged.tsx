@@ -18,7 +18,7 @@ const surfaces = [
 ]
 
 export default function Slide05DiscoveryChanged() {
-  const meta = SLIDES[4]
+  const meta = SLIDES[6]
   const T_TITLE = 0.2
   const T_THEN = 0.8
   const T_ARROW = 1.3

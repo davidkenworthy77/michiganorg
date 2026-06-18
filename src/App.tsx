@@ -12,10 +12,10 @@ import Slide03TeamMakeup from './slides/Slide03TeamMakeup'
 import Slide04TeamValues from './slides/Slide04TeamValues'
 
 // Section 2 — The Future of AI
+import SlideTwoFrontWar from './slides/SlideTwoFrontWar'
 import Slide05DiscoveryChanged from './slides/Slide05DiscoveryChanged'
 import Slide06TrustGap from './slides/Slide06TrustGap'
 import Slide07BotsOutnumber from './slides/Slide07BotsOutnumber'
-import Slide08WhyOptimistic from './slides/Slide08WhyOptimistic'
 
 // Section 3 — Destination Intelligence
 import Slide09WebsiteIntelligence from './slides/Slide09WebsiteIntelligence'
@@ -34,10 +34,10 @@ const slideComponents: Record<string, () => ReactElement> = {
   '02': Slide02WeKnowMichigan,
   '03': Slide03TeamMakeup,
   '04': Slide04TeamValues,
-  '05': Slide05DiscoveryChanged,
+  '05': SlideTwoFrontWar,
   '06': Slide06TrustGap,
-  '07': Slide07BotsOutnumber,
-  '08': Slide08WhyOptimistic,
+  '07': Slide05DiscoveryChanged,
+  '08': Slide07BotsOutnumber,
   '09': Slide09WebsiteIntelligence,
   '10': Slide10ThreeWords,
   '11': Slide11SiteTraffic,

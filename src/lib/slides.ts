@@ -37,20 +37,20 @@ export const SLIDES: SlideMeta[] = [
 
   // ----- SECTION 2 — THE FUTURE OF AI -----
   {
-    id: '05', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'dark',
-    notes: `"The way people find a trip has changed. They're not starting on a homepage anymore, they're starting in ChatGPT, Gemini, Perplexity, in the AI answer sitting at the top of Google. And the information they pull lives everywhere now: social, LLMs, agents acting on their behalf, PR. They arrive expecting a conversation and an experience built for them. The old model, one site with one set of pages for everyone, just doesn't meet them where they are."`,
+    id: '05', slug: 'two-front-war', label: 'THE SHIFT', title: 'A war on two fronts', theme: 'dark',
+    notes: `Dave reframes the problem. "DMOs are fighting a war on two fronts. Human travelers have moved on — they're planning trips with ChatGPT, expecting Netflix-level personalization, and generic content has become irrelevant. And the AI bots don't use you either — most queries never reach your site, LLMs don't recognize you as the authority, and your content lacks the structure they need. Neither side trusts you." This sets up the trust theme that runs through the next few slides.`,
   },
   {
     id: '06', slug: 'trust-gap', label: 'THE SHIFT', title: 'It comes down to trust', theme: 'dark',
     notes: `"Stack all of that up and it comes down to one word: trust. Travelers don't fully trust DMOs to give them the experience they now expect. And here's the harder part. The machines don't trust us either. When an AI answers a question about Michigan, it's often not pulling from the DMO, it's pulling from everyone else. So we've got a trust gap on two fronts at the same time: the people, and the systems now answering on our behalf."`,
   },
   {
-    id: '07', slug: 'bots-outnumber', label: 'THE SHIFT', title: 'Bots now outnumber humans', theme: 'dark',
-    notes: `"This is the stat that stops the room. Last year, for the second year running, more than half of all web traffic was automated, not human. And AI agent traffic grew almost 8,000% in twelve months, I wish my stock portfolio grew like that. Most people hear this and brace for impact. We don't. The systems reading destination content are now an audience in their own right, and every one of those surfaces is a new place Michigan can show up and tell its story. This is the biggest set of new front doors the destination has ever had."`,
+    id: '07', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'dark',
+    notes: `"The way people find a trip has changed. They're not starting on a homepage anymore, they're starting in ChatGPT, Gemini, Perplexity, in the AI answer sitting at the top of Google. And the information they pull lives everywhere now: social, LLMs, agents acting on their behalf, PR. They arrive expecting a conversation and an experience built for them. The old model, one site with one set of pages for everyone, just doesn't meet them where they are."`,
   },
   {
-    id: '08', slug: 'why-optimistic', label: 'THE OPPORTUNITY', title: "Why we're optimistic", theme: 'light',
-    notes: `"So why are we optimistic? It starts with one idea: destination knowledge sits at the center of all of this. Own that, and everything else follows. We focus on brand perception, not just rankings, how Michigan is understood everywhere people and machines form their opinions. The first movers in this space are already pulling ahead, and the window to be one is open right now. And this isn't theory for us, we've done the work and moved the needle on discoverability for destinations already. That's what we want to bring to Michigan." Handoff: "And the way you do that is to stop thinking about a website, and start thinking about destination intelligence."`,
+    id: '08', slug: 'bots-outnumber', label: 'THE SHIFT', title: 'Bots now outnumber humans', theme: 'dark',
+    notes: `"This is the stat that stops the room. Last year, for the second year running, more than half of all web traffic was automated, not human. And AI agent traffic grew almost 8,000% in twelve months, I wish my stock portfolio grew like that. Most people hear this and brace for impact. We don't. The systems reading destination content are now an audience in their own right, and every one of those surfaces is a new place Michigan can show up and tell its story. This is the biggest set of new front doors the destination has ever had."`,
   },
 
   // ----- SECTION 3 — DESTINATION INTELLIGENCE -----

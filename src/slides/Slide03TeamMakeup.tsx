@@ -11,11 +11,11 @@ interface Member {
   line: string
 }
 
-// Order matches Casey's wave cues in the talk track.
+// Order roughly follows the wave cues in the talk track.
 const members: Member[] = [
   { role: 'Digital & AI', name: 'Dave', line: 'A voice for where this industry is heading.' },
-  { role: 'Content', name: 'Content specialists', line: 'Defining what wins on a web filling up with slop.' },
-  { role: 'Technical', name: 'Sean', line: 'Making Michigan show up where the answers get formed.' },
+  { role: 'Content & Experience', name: 'Sean', line: 'Making Michigan show up where the answers get formed.' },
+  { role: 'Account service', name: 'Casey', line: 'Your day-to-day partner, keeping every workstream in lockstep.' },
   { role: 'Global leadership', name: 'Katie', line: 'Betting our future on this space, in love with the industry.' },
   { role: 'Creative', name: 'Rick', line: 'Every pixel unmistakably Pure Michigan.' },
   { role: 'Growth & partnership', name: 'Justin', line: "In it for the long game." },

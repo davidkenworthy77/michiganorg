@@ -48,7 +48,7 @@ function RocketLine({ delay }: { delay: number }) {
 }
 
 export default function Slide07BotsOutnumber() {
-  const meta = SLIDES[6]
+  const meta = SLIDES[7]
   const T_TITLE = 0.2
   const T_GRID = 0.8
   const T_RIGHT = 1.6
@@ -104,13 +104,9 @@ export default function Slide07BotsOutnumber() {
           transition={{ duration: 0.8, ease, delay: T_RIGHT + 1.4 }}
           className="font-display font-medium text-base md:text-lg tracking-tight text-bone-50 text-center max-w-3xl mx-auto mt-3"
         >
-          AI is now a primary audience for destination content —{' '}
-          <span className="text-ember-500">the most new front doors we've ever had.</span>
+          AI is now a primary audience for{' '}
+          <span className="text-ember-500">destination content.</span>
         </motion.p>
-
-        <p className="font-mono text-[9px] tracking-looser uppercase text-bone-100/35 text-center mt-2">
-          Sources: Thales / Imperva 2026 Bad Bot Report · HUMAN Security
-        </p>
       </div>
     </Slide>
   )

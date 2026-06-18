@@ -61,8 +61,8 @@ export default function Slide09WebsiteIntelligence() {
           transition={{ duration: 0.8, ease, delay: T_TITLE }}
           className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-ink-900 leading-tight mx-auto text-center max-w-5xl"
         >
-          michigan.org isn't a website.{' '}
-          <span className="text-ember-500">It's the intelligence.</span>
+          One source of truth.{' '}
+          <span className="text-ember-500">Every channel.</span>
         </motion.h2>
 
         <div className="flex-1 flex items-center justify-center mt-1">
@@ -142,7 +142,7 @@ export default function Slide09WebsiteIntelligence() {
                   michigan.org
                 </div>
                 <div className="font-mono text-[9px] md:text-[10px] tracking-looser uppercase text-bone-100/70">
-                  The intelligence
+                  Website
                 </div>
               </div>
             </motion.div>
@@ -194,7 +194,7 @@ export default function Slide09WebsiteIntelligence() {
           transition={{ duration: 0.8, ease, delay: T_LABELS + 0.8 }}
           className="font-display text-base md:text-lg text-ink-700/80 text-center max-w-3xl mx-auto mt-1"
         >
-          Build it once, build it right — and Michigan shows up accurate and on-brand everywhere a traveler or a machine is asking.
+          Authority in the future doesn't come from a website. It comes from a single source of truth that every channel draws and learns from.
         </motion.p>
       </div>
     </Slide>
