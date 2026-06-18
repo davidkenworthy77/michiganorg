@@ -9,26 +9,44 @@ interface Member {
   role: string
   name: string
   line: string
+  /** Optional headshot under /public (e.g. '/logos/Katie.jpg'). */
+  photo?: string
 }
 
 // Order roughly follows the wave cues in the talk track.
 const members: Member[] = [
-  { role: 'Digital & AI', name: 'Dave', line: 'A voice for where this industry is heading.' },
-  { role: 'Content & Experience', name: 'Sean', line: 'Making Michigan show up where the answers get formed.' },
-  { role: 'Account service', name: 'Casey', line: 'Your day-to-day partner, keeping every workstream in lockstep.' },
-  { role: 'Global leadership', name: 'Katie', line: 'Betting our future on this space, in love with the industry.' },
-  { role: 'Creative', name: 'Rick', line: 'Every pixel unmistakably Pure Michigan.' },
-  { role: 'Growth & partnership', name: 'Justin', line: "In it for the long game." },
+  { role: 'Digital & AI', name: 'Dave', line: 'A voice for where this industry is heading.', photo: '/logos/David.jpg' },
+  { role: 'Content & Experience', name: 'Sean', line: 'Making Michigan show up where the answers get formed.', photo: '/logos/sean.jpg' },
+  { role: 'Account service', name: 'Casey', line: 'Your day-to-day partner, keeping every workstream in lockstep.', photo: '/logos/Casey.jpg' },
+  { role: 'Global leadership', name: 'Katie', line: 'Betting our future on this space, in love with the industry.', photo: '/logos/Katie.jpg' },
+  { role: 'Creative', name: 'Rick', line: 'Every pixel unmistakably Pure Michigan.', photo: '/logos/rick.jpg' },
+  { role: 'Growth & partnership', name: 'Justin', line: "In it for the long game.", photo: '/logos/justin.jpg' },
 ]
 
-/** Square headshot placeholder — drop a real photo in by swapping the inner
-    HumanGlyph for <img className="w-full h-full object-cover" />. */
-function FacePlaceholder({ variant = 'card' }: { variant?: 'card' | 'row' }) {
+// The wider-team row beneath the cards. Real photos first, then placeholders.
+const rowFaces: { src?: string; name?: string }[] = [
+  { src: '/logos/Sarika.jpg', name: 'Sarika' },
+  { src: '/logos/Anna.jpg', name: 'Anna' },
+  { src: '/logos/craig.jpg', name: 'Craig' },
+  { src: '/logos/stephen.jpg', name: 'Stephen' },
+  { src: '/logos/jay.jpg', name: 'Jay' },
+  { src: '/logos/Cato.jpg', name: 'Cato' },
+  { src: '/logos/Erin.jpg', name: 'Erin' },
+  { src: '/logos/eric.jpg', name: 'Eric' },
+]
+
+/** Square headshot — shows a real photo when `src` is set, otherwise a
+    placeholder silhouette. */
+function FacePlaceholder({ variant = 'card', src, name }: { variant?: 'card' | 'row'; src?: string; name?: string }) {
   const dim = variant === 'card' ? 'w-14 h-14 md:w-16 md:h-16' : 'w-14 h-14 md:w-[68px] md:h-[68px]'
   const glyph = variant === 'card' ? 'w-9 h-9 md:w-10 md:h-10' : 'w-8 h-8 md:w-10 md:h-10'
   return (
     <div className={`${dim} rounded-xl bg-ink-900/[0.05] border border-ink-900/10 flex items-center justify-center text-ink-900/20 shrink-0 overflow-hidden`}>
-      <HumanGlyph className={`${glyph} translate-y-1`} />
+      {src ? (
+        <img src={src} alt={name ?? ''} className="w-full h-full object-cover" />
+      ) : (
+        <HumanGlyph className={`${glyph} translate-y-1`} />
+      )}
     </div>
   )
 }
@@ -73,7 +91,7 @@ export default function Slide03TeamMakeup() {
                   </span>
                 </div>
                 <div className="flex items-center gap-3.5 mt-4">
-                  <FacePlaceholder variant="card" />
+                  <FacePlaceholder variant="card" src={m.photo} name={m.name} />
                   <div className="font-display font-medium text-xl md:text-2xl tracking-tight text-ink-900 leading-tight">
                     {m.name}
                   </div>
@@ -88,14 +106,14 @@ export default function Slide03TeamMakeup() {
 
           {/* The wider team — a row of faces directly under the cards, same width */}
           <div className="flex justify-between mt-4 md:mt-5">
-            {Array.from({ length: 8 }).map((_, i) => (
+            {rowFaces.map((f, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, ease, delay: T_ROW + i * 0.08 }}
               >
-                <FacePlaceholder variant="row" />
+                <FacePlaceholder variant="row" src={f.src} name={f.name} />
               </motion.div>
             ))}
           </div>
