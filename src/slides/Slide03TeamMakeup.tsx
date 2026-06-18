@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Slide } from '../components/Slide'
+import { HumanGlyph } from '../components/FigureGrid'
 import { SLIDES } from '../lib/slides'
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -20,10 +21,23 @@ const members: Member[] = [
   { role: 'Growth & partnership', name: 'Justin', line: "In it for the long game." },
 ]
 
+/** Square headshot placeholder — drop a real photo in by swapping the inner
+    HumanGlyph for <img className="w-full h-full object-cover" />. */
+function FacePlaceholder({ variant = 'card' }: { variant?: 'card' | 'row' }) {
+  const dim = variant === 'card' ? 'w-14 h-14 md:w-16 md:h-16' : 'w-14 h-14 md:w-[68px] md:h-[68px]'
+  const glyph = variant === 'card' ? 'w-9 h-9 md:w-10 md:h-10' : 'w-8 h-8 md:w-10 md:h-10'
+  return (
+    <div className={`${dim} rounded-xl bg-ink-900/[0.05] border border-ink-900/10 flex items-center justify-center text-ink-900/20 shrink-0 overflow-hidden`}>
+      <HumanGlyph className={`${glyph} translate-y-1`} />
+    </div>
+  )
+}
+
 export default function Slide03TeamMakeup() {
   const meta = SLIDES[2]
   const T_TITLE = 0.2
   const T_CARDS = 0.8
+  const T_ROW = T_CARDS + members.length * 0.28 + 0.3
 
   return (
     <Slide meta={meta}>
@@ -32,13 +46,14 @@ export default function Slide03TeamMakeup() {
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease, delay: T_TITLE }}
-          className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-bone-50 leading-tight mx-auto text-center max-w-5xl"
+          className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-ink-900 leading-tight mx-auto text-center max-w-5xl"
         >
-          The people on your screen are the ones{' '}
-          <span className="text-ember-500">who'll do the work.</span>
+          A team of leaders, doers{' '}
+          <span className="text-ember-500">and collaborators.</span>
         </motion.h2>
 
-        <div className="flex-1 grid md:grid-cols-3 gap-4 md:gap-5 mt-12 md:mt-14 max-w-6xl mx-auto w-full content-center">
+        <div className="flex-1 flex flex-col justify-center max-w-6xl mx-auto w-full mt-8 md:mt-10">
+          <div className="grid md:grid-cols-3 gap-4 md:gap-5">
           {members.map((m, i) => {
             const base = T_CARDS + i * 0.28
             return (
@@ -47,35 +62,44 @@ export default function Slide03TeamMakeup() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease, delay: base }}
-                className="flex flex-col bg-bone-100/[0.04] border border-bone-100/10 rounded-2xl p-6 md:p-7"
+                className="flex flex-col bg-white/60 border border-ink-900/10 rounded-2xl p-6 md:p-7 shadow-[0_1px_0_rgba(10,10,11,0.04)]"
               >
-                <div className="flex items-center justify-between">
+                <div className="flex items-start justify-between">
                   <span className="font-mono text-[10px] tracking-looser uppercase text-ember-500">
                     {m.role}
                   </span>
-                  <span className="font-mono text-[10px] tracking-looser text-bone-100/30 tabular-nums">
+                  <span className="font-mono text-[10px] tracking-looser text-ink-900/30 tabular-nums">
                     0{i + 1}
                   </span>
                 </div>
-                <div className="font-display font-medium text-2xl md:text-3xl tracking-tight text-bone-50 mt-3">
-                  {m.name}
+                <div className="flex items-center gap-3.5 mt-4">
+                  <FacePlaceholder variant="card" />
+                  <div className="font-display font-medium text-xl md:text-2xl tracking-tight text-ink-900 leading-tight">
+                    {m.name}
+                  </div>
                 </div>
-                <div className="text-sm text-bone-100/65 leading-snug mt-2">
+                <div className="text-sm text-ink-700/70 leading-snug mt-3">
                   {m.line}
                 </div>
               </motion.div>
             )
           })}
-        </div>
+          </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: T_CARDS + 1.8 }}
-          className="font-mono text-[11px] tracking-looser uppercase text-bone-100/45 text-center mt-10"
-        >
-          Led on the account by Casey · Justin available for Q&A
-        </motion.p>
+          {/* The wider team — a row of faces directly under the cards, same width */}
+          <div className="flex justify-between mt-4 md:mt-5">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease, delay: T_ROW + i * 0.08 }}
+              >
+                <FacePlaceholder variant="row" />
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     </Slide>
   )

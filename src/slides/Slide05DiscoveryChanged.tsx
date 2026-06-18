@@ -4,37 +4,25 @@ import { SLIDES } from '../lib/slides'
 
 const ease = [0.22, 1, 0.36, 1] as const
 
-interface Surface {
-  label: string
-  x: number // % within the right panel
-  y: number
-  size?: 'lg' | 'md' | 'sm'
-}
-
-const surfaces: Surface[] = [
-  { label: 'ChatGPT', x: 30, y: 26, size: 'lg' },
-  { label: 'Gemini', x: 64, y: 16, size: 'md' },
-  { label: 'Perplexity', x: 78, y: 44, size: 'md' },
-  { label: 'Google AI Overview', x: 44, y: 52, size: 'lg' },
-  { label: 'AI Agents', x: 20, y: 62, size: 'md' },
-  { label: 'Social', x: 70, y: 74, size: 'sm' },
-  { label: 'PR', x: 40, y: 84, size: 'sm' },
-  { label: 'Reddit', x: 88, y: 64, size: 'sm' },
-  { label: 'Maps', x: 13, y: 34, size: 'sm' },
+// The "now" — the surfaces a trip can start on. Abundance is the point.
+const surfaces = [
+  'ChatGPT',
+  'Gemini',
+  'Perplexity',
+  'Google AI Overviews',
+  'Copilot',
+  'AI Agents',
+  'Social',
+  'Reddit',
+  'Maps',
 ]
-
-const sizeClass: Record<NonNullable<Surface['size']>, string> = {
-  lg: 'text-sm md:text-base px-4 py-2',
-  md: 'text-xs md:text-sm px-3.5 py-1.5',
-  sm: 'text-[11px] md:text-xs px-3 py-1.5',
-}
 
 export default function Slide05DiscoveryChanged() {
   const meta = SLIDES[4]
   const T_TITLE = 0.2
-  const T_LEFT = 0.8
+  const T_THEN = 0.8
   const T_ARROW = 1.3
-  const T_NODES = 1.7
+  const T_NOW = 1.6
 
   return (
     <Slide meta={meta}>
@@ -45,36 +33,39 @@ export default function Slide05DiscoveryChanged() {
           transition={{ duration: 0.8, ease, delay: T_TITLE }}
           className="font-display font-medium text-3xl md:text-4xl lg:text-5xl tracking-tight text-bone-50 leading-tight mx-auto text-center max-w-5xl"
         >
-          One front door{' '}
-          <span className="text-ember-500">became many.</span>
+          Discovery used to have one door.{' '}
+          <span className="text-ember-500">Now it has dozens.</span>
         </motion.h2>
 
-        <div className="flex-1 grid grid-cols-1 md:grid-cols-[minmax(180px,260px)_40px_1fr] gap-6 md:gap-4 items-center mt-10 md:mt-12">
-          {/* THEN — the homepage, small and grey */}
+        <div className="flex-1 grid grid-cols-1 md:grid-cols-[minmax(220px,300px)_56px_1fr] gap-6 md:gap-2 items-center mt-8 md:mt-10 max-w-6xl mx-auto w-full">
+          {/* THEN — one website */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease, delay: T_LEFT }}
-            className="mx-auto w-full max-w-[240px]"
+            transition={{ duration: 0.7, ease, delay: T_THEN }}
+            className="flex flex-col"
           >
-            <div className="font-mono text-[10px] tracking-looser uppercase text-bone-100/40 mb-3 text-center">
+            <div className="font-mono text-[10px] tracking-looser uppercase text-bone-100/40 mb-3">
               Then
             </div>
-            <div className="rounded-xl border border-bone-100/15 bg-bone-100/[0.03] p-3 opacity-60">
+            <div className="rounded-xl border border-bone-100/15 bg-bone-100/[0.03] p-4">
               <div className="flex gap-1.5 mb-3">
                 <span className="w-2 h-2 rounded-full bg-bone-100/25" />
                 <span className="w-2 h-2 rounded-full bg-bone-100/25" />
                 <span className="w-2 h-2 rounded-full bg-bone-100/25" />
               </div>
               <div className="space-y-2">
-                <div className="h-2 rounded bg-bone-100/15 w-3/4" />
-                <div className="h-2 rounded bg-bone-100/10 w-full" />
-                <div className="h-2 rounded bg-bone-100/10 w-5/6" />
-                <div className="h-12 rounded bg-bone-100/[0.07] w-full mt-3" />
+                <div className="h-2.5 rounded bg-bone-100/15 w-3/4" />
+                <div className="h-2.5 rounded bg-bone-100/10 w-full" />
+                <div className="h-2.5 rounded bg-bone-100/10 w-5/6" />
+                <div className="h-14 rounded bg-bone-100/[0.07] w-full mt-3" />
               </div>
             </div>
-            <div className="font-mono text-[10px] tracking-looser uppercase text-bone-100/45 mt-3 text-center">
-              One homepage
+            <div className="font-display text-base md:text-lg text-bone-50 mt-4 leading-snug">
+              One website.
+            </div>
+            <div className="text-sm text-bone-100/55 leading-snug mt-1">
+              One set of pages, for everyone.
             </div>
           </motion.div>
 
@@ -85,68 +76,45 @@ export default function Slide05DiscoveryChanged() {
             transition={{ duration: 0.5, ease, delay: T_ARROW }}
             className="hidden md:flex items-center justify-center text-ember-500"
           >
-            <svg width="34" height="14" viewBox="0 0 34 14" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <line x1="1" y1="7" x2="31" y2="7" />
-              <polyline points="25,1.5 32,7 25,12.5" />
+            <svg width="40" height="16" viewBox="0 0 40 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <line x1="2" y1="8" x2="36" y2="8" />
+              <polyline points="29,2 37,8 29,14" />
             </svg>
           </motion.div>
 
-          {/* NOW — the constellation */}
-          <div className="relative w-full h-[clamp(320px,46vh,460px)]">
-            <div className="font-mono text-[10px] tracking-looser uppercase text-ember-500/80 mb-2 absolute -top-1 left-0">
+          {/* NOW — a dense grid of surfaces */}
+          <div className="flex flex-col">
+            <div className="font-mono text-[10px] tracking-looser uppercase text-ember-500/80 mb-3">
               Now
             </div>
-
-            {/* faint connecting lines from a central point */}
-            <svg className="absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 md:gap-3">
               {surfaces.map((s, i) => (
-                <motion.line
-                  key={`l-${i}`}
-                  x1="50" y1="50" x2={s.x} y2={s.y}
-                  stroke="rgb(255 74 28 / 0.18)" strokeWidth="0.2"
-                  initial={{ pathLength: 0, opacity: 0 }}
-                  animate={{ pathLength: 1, opacity: 1 }}
-                  transition={{ duration: 0.6, ease, delay: T_NODES + i * 0.08 }}
-                  vectorEffect="non-scaling-stroke"
-                />
+                <motion.div
+                  key={s}
+                  initial={{ opacity: 0, scale: 0.85 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.45, ease, delay: T_NOW + i * 0.08 }}
+                  className="flex items-center gap-2 rounded-lg border border-ember-500/25 bg-ink-800/80 px-3.5 py-2.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-ember-500 shrink-0" />
+                  <span className="text-bone-50 text-sm md:text-[15px] leading-tight">{s}</span>
+                </motion.div>
               ))}
-            </svg>
-
-            {/* the traveler at the center */}
-            <motion.div
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, ease, delay: T_NODES - 0.2 }}
-              className="absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-              style={{ left: '50%', top: '50%' }}
-            >
-              <span className="w-3 h-3 rounded-full bg-ember-500 shadow-[0_0_24px_rgba(255,74,28,0.7)]" />
-            </motion.div>
-
-            {/* surface chips */}
-            {surfaces.map((s, i) => (
+              {/* + more, to imply the list keeps growing */}
               <motion.div
-                key={s.label}
-                initial={{ opacity: 0, scale: 0.7 }}
+                initial={{ opacity: 0, scale: 0.85 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, ease, delay: T_NODES + 0.2 + i * 0.09 }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 rounded-full border border-ember-500/30 bg-ink-800/90 text-bone-50 font-medium whitespace-nowrap ${sizeClass[s.size ?? 'md']}`}
-                style={{ left: `${s.x}%`, top: `${s.y}%` }}
+                transition={{ duration: 0.45, ease, delay: T_NOW + surfaces.length * 0.08 }}
+                className="flex items-center gap-2 rounded-lg border border-dashed border-bone-100/20 px-3.5 py-2.5"
               >
-                {s.label}
+                <span className="text-bone-100/50 text-sm md:text-[15px] leading-tight">+ and counting</span>
               </motion.div>
-            ))}
+            </div>
+            <div className="text-sm text-bone-100/55 leading-snug mt-4">
+              Trips now start in the answer — and travelers arrive expecting a conversation built for them.
+            </div>
           </div>
         </div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease, delay: T_NODES + 1.3 }}
-          className="font-display text-base md:text-lg text-bone-100/70 text-center max-w-3xl mx-auto mt-2"
-        >
-          Trips start in AI now — and travelers arrive expecting a conversation built for them.
-        </motion.p>
       </div>
     </Slide>
   )

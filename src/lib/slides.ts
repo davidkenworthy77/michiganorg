@@ -27,7 +27,7 @@ export const SLIDES: SlideMeta[] = [
     notes: `"In 2021 we were proud to be named Pure Michigan's agency of record, and today we lead media, creative and brand. We also lead two other Michigan DMOs, Visit Detroit and Destination Ann Arbor, and we've got an office full of talented people right here in the state, twenty of us on this account today. This team already gets who you are. Now we're ready to take that into the digital space."`,
   },
   {
-    id: '03', slug: 'team-makeup', label: 'THE TEAM', title: 'The people doing the work', theme: 'dark',
+    id: '03', slug: 'team-makeup', label: 'THE TEAM', title: 'The people doing the work', theme: 'light',
     notes: `(People wave as Casey names what they do.) "The people you see on your screen today are the ones who'll do the work. Leaders in the digital space who are out there right now as a voice for where this industry is heading. (Dave waves.) Content specialists who'll define what actually wins on a web filling up with slop. The technical minds who make sure Michigan shows up where the answers get formed. (Sean waves.) Global leadership betting our future on this space and in love with this industry. (Katie waves.) Creative leadership that keeps every pixel unmistakably Pure Michigan. (Rick waves.) And the partnership muscle that's in it for the long game. (Justin waves.)"`,
   },
   {

@@ -69,9 +69,6 @@ export default function Slide04TeamValues() {
             For Michigan that means{' '}
             <span className="text-ember-500">no ramp, no brand drift, far less risk.</span>
           </p>
-          <p className="font-display text-base md:text-lg text-bone-100/70 max-w-xs leading-snug">
-            Nobody on this call is learning you on your clock.
-          </p>
         </motion.div>
       </div>
     </Slide>
