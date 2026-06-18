@@ -55,28 +55,6 @@ body {
   opacity: 0.18;
 }
 
-/* ───────────────────────────────────────────────────────────────
-   Still mode — applied to <html data-render="still"> when the page is
-   backgrounded (set from main.tsx). Forces Framer-animated content to its
-   final, visible state so an embedded/paused preview shows real slides
-   instead of blank ones. Decorative low-opacity layers (grid, orbs, hairlines)
-   keep their authored opacity because they're styled by class, not inline.
-   A foreground browser tab is data-render="live" and animates normally.
-   ─────────────────────────────────────────────────────────────── */
-html[data-render="still"] [style*="opacity"]:not(.ember-orb) {
-  opacity: 1 !important;
-}
-html[data-render="still"] [pathLength] {
-  stroke-dasharray: none !important;
-  stroke-dashoffset: 0 !important;
-}
-/* SVG shapes animate in via scale(0)->1 with transform-origin at their own
-   cx/cy; their resting transform is identity, so clearing it shows them in
-   place. Scoped to svg so positioned HTML (labels, orbs) keeps its transform. */
-html[data-render="still"] svg [style*="transform"] {
-  transform: none !important;
-}
-
 /* Slide root takes full viewport */
 .slide-root {
   position: relative;

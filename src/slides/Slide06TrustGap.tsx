@@ -73,7 +73,7 @@ function BrokenLink({ delay }: { delay: number }) {
 }
 
 export default function Slide06TrustGap() {
-  const meta = SLIDES[5]
+  const meta = SLIDES[6]
   const T_TITLE = 0.2
   const T_CENTER = 0.9
   const T_LINKS = 1.5

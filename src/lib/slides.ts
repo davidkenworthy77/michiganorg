@@ -37,29 +37,33 @@ export const SLIDES: SlideMeta[] = [
 
   // ----- SECTION 2 — THE FUTURE OF AI -----
   {
-    id: '05', slug: 'two-front-war', label: 'THE SHIFT', title: 'A war on two fronts', theme: 'dark',
+    id: '05', slug: 'where-today', label: 'THE SHIFT', title: 'Where are we today?', theme: 'dark',
+    notes: `Casey hands to Dave. A scene-setting beat. "Here's how we see that chapter." → Dave: "Thanks Casey. Before we get into where michigan.org goes next, I want to set the scene — to look at where we actually are today, and how the way people find a destination has quietly changed underneath all of us." Then into the shift.`,
+  },
+  {
+    id: '06', slug: 'two-front-war', label: 'THE SHIFT', title: 'A war on two fronts', theme: 'dark',
     notes: `Dave reframes the problem. "DMOs are fighting a war on two fronts. Human travelers have moved on — they're planning trips with ChatGPT, expecting Netflix-level personalization, and generic content has become irrelevant. And the AI bots don't use you either — most queries never reach your site, LLMs don't recognize you as the authority, and your content lacks the structure they need. Neither side trusts you." This sets up the trust theme that runs through the next few slides.`,
   },
   {
-    id: '06', slug: 'trust-gap', label: 'THE SHIFT', title: 'It comes down to trust', theme: 'dark',
+    id: '07', slug: 'trust-gap', label: 'THE SHIFT', title: 'It comes down to trust', theme: 'dark',
     notes: `"Stack all of that up and it comes down to one word: trust. Travelers don't fully trust DMOs to give them the experience they now expect. And here's the harder part. The machines don't trust us either. When an AI answers a question about Michigan, it's often not pulling from the DMO, it's pulling from everyone else. So we've got a trust gap on two fronts at the same time: the people, and the systems now answering on our behalf."`,
   },
   {
-    id: '07', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'dark',
+    id: '08', slug: 'discovery-changed', label: 'THE SHIFT', title: 'Discovery has changed', theme: 'dark',
     notes: `"The way people find a trip has changed. They're not starting on a homepage anymore, they're starting in ChatGPT, Gemini, Perplexity, in the AI answer sitting at the top of Google. And the information they pull lives everywhere now: social, LLMs, agents acting on their behalf, PR. They arrive expecting a conversation and an experience built for them. The old model, one site with one set of pages for everyone, just doesn't meet them where they are."`,
   },
   {
-    id: '08', slug: 'bots-outnumber', label: 'THE SHIFT', title: 'Bots now outnumber humans', theme: 'dark',
+    id: '09', slug: 'bots-outnumber', label: 'THE SHIFT', title: 'Bots now outnumber humans', theme: 'dark',
     notes: `"This is the stat that stops the room. Last year, for the second year running, more than half of all web traffic was automated, not human. And AI agent traffic grew almost 8,000% in twelve months, I wish my stock portfolio grew like that. Most people hear this and brace for impact. We don't. The systems reading destination content are now an audience in their own right, and every one of those surfaces is a new place Michigan can show up and tell its story. This is the biggest set of new front doors the destination has ever had."`,
   },
 
   // ----- SECTION 3 — DESTINATION INTELLIGENCE -----
   {
-    id: '09', slug: 'website-is-intelligence', label: 'DESTINATION INTELLIGENCE', title: 'The website is the intelligence', theme: 'light',
+    id: '10', slug: 'website-is-intelligence', label: 'DESTINATION INTELLIGENCE', title: 'The website is the intelligence', theme: 'light',
     notes: `"Here's the shift. Stop picturing michigan.org as a website, a stack of pages people visit. Picture it as the destination's intelligence. One living, structured source of truth about Michigan. The site is the engine, and everything else feeds from it: the LLMs, the agents, social, email, PR, the paid media. Build it once and build it right, and Michigan shows up accurate and on-brand everywhere a traveler or a machine is asking. The website stops being a destination you visit and becomes the brain behind all of it."`,
   },
   {
-    id: '10', slug: 'three-words', label: 'HOW WE WIN', title: 'Trust. Taste. Ownability.', theme: 'dark',
+    id: '11', slug: 'three-words', label: 'HOW WE WIN', title: 'Trust. Taste. Ownability.', theme: 'dark',
     notes: `"So how does a destination actually win in this world? Three words.
 Trust. You become the source the answers are built from, so when anyone, a person or an AI, asks about Michigan, it traces back to you.
 Taste. Anyone can be accurate. Only Michigan can sound like Michigan, and that point of view is the one thing AI can't fake.
@@ -69,16 +73,12 @@ Trust gets you cited. Taste gets you chosen. Ownability keeps you the answer. If
 
   // ----- SECTION 4 — TRAFFIC, SECURITY, CONSENT, ADA -----
   {
-    id: '11', slug: 'site-traffic', label: 'TRAFFIC · SECURITY · ACCESS', title: 'Managing site traffic', theme: 'light',
-    notes: `"You asked us directly how we manage site traffic, so let me answer it head on. michigan.org runs on Pantheon, US-based managed hosting built specifically for Drupal. You get four separate environments, dev, test, beta and production, so nothing untested ever touches the live site. A global CDN and autoscaling absorb the seasonal spikes, fall color season, the winter rush, without anyone lifting a finger. Automated backups and disaster recovery let us roll back fast, and we monitor performance in real time with alerts on uptime and page speed before a visitor ever notices. One more thing: the old scoreboard was raw traffic. The new one is visibility, whether Michigan shows up in the answer. We manage both."`,
+    id: '12', slug: 'visibility', label: 'THE NEW SCOREBOARD', title: 'Visibility is the new traffic', theme: 'light',
+    notes: `"We know website traffic has been falling, and that's a real concern. But here's the reframe: traffic was only ever measuring one surface — your website. The new scoreboard is visibility: your destination's presence across every place a person or a machine forms an opinion of Michigan. Website traffic is just one grey line. Add LLM citations, agent traffic, social, earned — and the sum, the orange line, is what actually matters, and it's growing. So the new metrics aren't pageviews. They're share of voice in the discovery conversations, owning how Michigan is perceived, being wherever the traveler is asking, and funding the knowledge and point of view that everything else draws from."`,
   },
   {
-    id: '12', slug: 'secure-by-design', label: 'TRAFFIC · SECURITY · ACCESS', title: 'Secure by design', theme: 'dark',
-    notes: `"On security. Remember that more than half of web traffic is bots, much of it bad? This is where we stop them. Active firewall and intrusion prevention that identifies, logs, blocks and reports malicious activity. Load balancing for high availability. Ongoing vulnerability scanning and security testing. Role-based permissions so people only touch what they should. And support with severity-based response times and a clear escalation path, so if something does happen, you know exactly who's on it and how fast."`,
-  },
-  {
-    id: '13', slug: 'private-accessible', label: 'TRAFFIC · SECURITY · ACCESS', title: 'Private & accessible by default', theme: 'light',
-    notes: `"Two more the JEC cares about. Privacy: a consent management platform and full cookie compliance, and Michigan's data stays Michigan's, stored separately, never used to train anyone else's models, governed by clear retention and access rules. And accessibility, which we build in from day one, not bolt on at the end. The RFP asks for WCAG 2.1 AA at 90% or higher. We meet or exceed it, validated with automated scans, manual screen-reader and keyboard testing, and real users, then monitored continuously so it stays compliant."`,
+    id: '13', slug: 'secure-accessible', label: 'SECURE & ACCESSIBLE', title: 'Secure & accessible', theme: 'dark',
+    notes: `"Two things have to be true at once: the site has to be accessible, and it has to be secure. Accessible in every sense of the word — findable to the machines, with clean schema and structured data so LLMs and agents read Michigan accurately, and accessible to people, meeting WCAG 2.1 AA at 90% or higher, screen-reader and keyboard tested. And secure — firewall, intrusion prevention and vulnerability scanning, high availability and uptime, and privacy, consent and data governance that stays compliant as the rules change. Everything we do, we do within the rules."`,
   },
 
   // ----- TRANSITION → LIVE DEMO -----

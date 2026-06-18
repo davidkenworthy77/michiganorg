@@ -72,7 +72,7 @@ function Column({ icon, caption, verdict, points, baseDelay }: ColumnProps) {
 }
 
 export default function SlideTwoFrontWar() {
-  const meta = SLIDES[4]
+  const meta = SLIDES[5]
 
   // Sequence (seconds): title → humans → bots
   const T_TITLE = 0.2

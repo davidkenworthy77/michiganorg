@@ -45,7 +45,7 @@ const nodes: Node[] = channels.map((label, i) => {
 })
 
 export default function Slide09WebsiteIntelligence() {
-  const meta = SLIDES[8]
+  const meta = SLIDES[9]
   const T_TITLE = 0.2
   const T_CENTER = 0.9
   const T_SPOKES = 1.5

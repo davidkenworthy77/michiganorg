@@ -48,7 +48,7 @@ function RocketLine({ delay }: { delay: number }) {
 }
 
 export default function Slide07BotsOutnumber() {
-  const meta = SLIDES[7]
+  const meta = SLIDES[8]
   const T_TITLE = 0.2
   const T_GRID = 0.8
   const T_RIGHT = 1.6

@@ -16,15 +16,15 @@ const facts: Fact[] = [
   {
     value: '2021',
     headline: 'Agency of record',
-    sub: 'Pure Michigan since 2021 — media, creative and brand. Four years in.',
+    sub: 'Pure Michigan since 2021 — strategy, paid media, creative, brand, research and analytics. Five years in.',
   },
   {
-    value: '3',
+    value: '5',
     headline: 'Michigan DMOs',
-    sub: 'Pure Michigan, Visit Detroit and Destination Ann Arbor. We know the regional dynamics.',
+    sub: 'Pure Michigan, Visit Detroit, Destination Ann Arbor, Traverse City and Grand Rapids — plus 20+ Pure Michigan partner collaborations. We know the regional dynamics.',
   },
   {
-    value: '20',
+    value: '30',
     headline: 'On this account',
     sub: 'Talented people right here in the state, on Michigan today.',
   },
@@ -81,7 +81,7 @@ export default function Slide02WeKnowMichigan() {
           className="font-display font-medium text-xl md:text-2xl tracking-tight text-ink-900 text-center max-w-3xl mx-auto mt-12"
         >
           No ramp. No learning curve. Now we take it{' '}
-          <span className="text-ember-500">into the digital space.</span>
+          <span className="text-ember-500">into what's next.</span>
         </motion.p>
       </div>
     </Slide>

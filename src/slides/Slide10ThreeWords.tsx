@@ -11,7 +11,7 @@ const words = [
 ]
 
 export default function Slide10ThreeWords() {
-  const meta = SLIDES[9]
+  const meta = SLIDES[10]
   const T_TITLE = 0.2
   const T_WORDS = 0.8
   const STEP = 0.9

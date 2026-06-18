@@ -7,7 +7,7 @@ const ease = [0.22, 1, 0.36, 1] as const
 // ─────────────────────────────────────────────────────────────
 // DEMO URL — Dave to paste the live demo site here before Monday.
 // Leave as '' and the button will prompt instead of opening a blank tab.
-const DEMO_URL = ''
+const DEMO_URL = 'https://michigan-blue.vercel.app/'
 // ─────────────────────────────────────────────────────────────
 
 export default function Slide14TimeForDesign() {
@@ -62,7 +62,7 @@ export default function Slide14TimeForDesign() {
           className="group relative inline-flex items-center gap-5 rounded-full bg-gradient-to-r from-ember-600 via-ember-500 to-glow-500 px-12 md:px-16 py-7 md:py-9 shadow-[0_0_60px_rgba(255,74,28,0.35)]"
         >
           <span className="font-display font-medium text-3xl md:text-5xl lg:text-6xl tracking-tight text-bone-50">
-            Time for some design
+            Here is our solution
           </span>
           <motion.svg
             width="40" height="20" viewBox="0 0 40 20" fill="none" stroke="currentColor" strokeWidth="2"
@@ -75,15 +75,6 @@ export default function Slide14TimeForDesign() {
             <polyline points="28,2 38,10 28,18" />
           </motion.svg>
         </motion.button>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.9 }}
-          className="font-mono text-[11px] tracking-looser uppercase text-bone-100/40 mt-10"
-        >
-          Click to go live — the demo opens in a new tab
-        </motion.p>
       </div>
     </Slide>
   )

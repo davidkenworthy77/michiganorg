@@ -7,7 +7,7 @@ const ease = [0.22, 1, 0.36, 1] as const
 
 const values = [
   { n: '01', word: 'Care.' },
-  { n: '02', word: 'Push the bleeding edge.' },
+  { n: '02', word: 'Drive innovation.' },
   { n: '03', word: 'Get better every day.' },
 ]
 
@@ -66,8 +66,8 @@ export default function Slide04TeamValues() {
           className="mt-14 border-t border-bone-100/15 pt-8 flex flex-col md:flex-row md:items-end md:justify-between gap-6"
         >
           <p className="font-display font-medium text-2xl md:text-3xl tracking-tight text-bone-50 max-w-xl leading-tight">
-            For Michigan that means{' '}
-            <span className="text-ember-500">no ramp, no brand drift, far less risk.</span>
+            For Michigan, that means{' '}
+            <span className="text-ember-500">no brand drift, less risk, more economic impact.</span>
           </p>
         </motion.div>
       </div>

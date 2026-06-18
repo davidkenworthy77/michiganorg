@@ -12,6 +12,7 @@ import Slide03TeamMakeup from './slides/Slide03TeamMakeup'
 import Slide04TeamValues from './slides/Slide04TeamValues'
 
 // Section 2 — The Future of AI
+import SlideWhereToday from './slides/SlideWhereToday'
 import SlideTwoFrontWar from './slides/SlideTwoFrontWar'
 import Slide05DiscoveryChanged from './slides/Slide05DiscoveryChanged'
 import Slide06TrustGap from './slides/Slide06TrustGap'
@@ -22,9 +23,8 @@ import Slide09WebsiteIntelligence from './slides/Slide09WebsiteIntelligence'
 import Slide10ThreeWords from './slides/Slide10ThreeWords'
 
 // Section 4 — Traffic, Security, Consent, ADA
-import Slide11SiteTraffic from './slides/Slide11SiteTraffic'
+import SlideVisibility from './slides/SlideVisibility'
 import Slide12SecureByDesign from './slides/Slide12SecureByDesign'
-import Slide13PrivateAccessible from './slides/Slide13PrivateAccessible'
 
 // Transition → live demo
 import Slide14TimeForDesign from './slides/Slide14TimeForDesign'
@@ -34,15 +34,15 @@ const slideComponents: Record<string, () => ReactElement> = {
   '02': Slide02WeKnowMichigan,
   '03': Slide03TeamMakeup,
   '04': Slide04TeamValues,
-  '05': SlideTwoFrontWar,
-  '06': Slide06TrustGap,
-  '07': Slide05DiscoveryChanged,
-  '08': Slide07BotsOutnumber,
-  '09': Slide09WebsiteIntelligence,
-  '10': Slide10ThreeWords,
-  '11': Slide11SiteTraffic,
-  '12': Slide12SecureByDesign,
-  '13': Slide13PrivateAccessible,
+  '05': SlideWhereToday,
+  '06': SlideTwoFrontWar,
+  '07': Slide06TrustGap,
+  '08': Slide05DiscoveryChanged,
+  '09': Slide07BotsOutnumber,
+  '10': Slide09WebsiteIntelligence,
+  '11': Slide10ThreeWords,
+  '12': SlideVisibility,
+  '13': Slide12SecureByDesign,
   '14': Slide14TimeForDesign,
 }
 
