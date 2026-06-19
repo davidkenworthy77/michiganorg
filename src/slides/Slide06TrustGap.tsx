@@ -73,7 +73,7 @@ function BrokenLink({ delay }: { delay: number }) {
 }
 
 export default function Slide06TrustGap() {
-  const meta = SLIDES[6]
+  const meta = SLIDES[5]
   const T_TITLE = 0.2
   const T_CENTER = 0.9
   const T_LINKS = 1.5
@@ -136,7 +136,7 @@ export default function Slide06TrustGap() {
           transition={{ duration: 0.8, ease, delay: T_GAUGE + 0.8 }}
           className="font-display font-medium text-xl md:text-2xl tracking-tight text-bone-50 text-center max-w-3xl mx-auto mt-6"
         >
-          A trust gap on two fronts at once —{' '}
+          A trust gap on two fronts at once –{' '}
           <span className="text-ember-500">the people, and the machines.</span>
         </motion.p>
       </div>

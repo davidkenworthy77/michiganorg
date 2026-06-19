@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1] as const
  * (the shift) to the answer. Eyebrow "How do we win".
  */
 export default function SlideFuture() {
-  const meta = SLIDES[9]
+  const meta = SLIDES[6]
   return (
     <Slide
       meta={meta}
@@ -31,7 +31,7 @@ export default function SlideFuture() {
         >
           <Sparkle className="w-3 h-3 text-ember-500" />
           <span className="font-mono text-xs tracking-looser uppercase text-ember-500">
-            How do we win
+            How we win
           </span>
         </motion.div>
 
@@ -54,7 +54,7 @@ export default function SlideFuture() {
           transition={{ duration: 0.8, ease, delay: 0.9 }}
           className="mt-10 max-w-2xl text-base md:text-lg text-bone-100/65 leading-snug"
         >
-          Here's how a destination wins from here — and what that means for the site itself.
+          Here's how a destination wins from here – and what that means for the site itself.
         </motion.p>
       </div>
     </Slide>

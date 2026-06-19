@@ -81,8 +81,9 @@ export default function Slide01Cover() {
           className="flex border-t border-bone-100/15 pt-8"
         >
           <div className="flex gap-8 md:gap-12 font-display text-base md:text-lg text-bone-100/90">
-            <span><span className="text-ember-400">·</span> Intro</span>
-            <span><span className="text-ember-400">·</span> What's next</span>
+            <span><span className="text-ember-400">·</span> Team</span>
+            <span><span className="text-ember-400">·</span> Today</span>
+            <span><span className="text-ember-400">·</span> The Future</span>
             <span><span className="text-ember-400">·</span> Demo</span>
           </div>
         </motion.div>

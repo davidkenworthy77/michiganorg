@@ -10,7 +10,7 @@ const ease = [0.22, 1, 0.36, 1] as const
  * "future of AI" section, so we don't drop straight into the problem.
  */
 export default function SlideWhereToday() {
-  const meta = SLIDES[4]
+  const meta = SLIDES[3]
   return (
     <Slide
       meta={meta}
@@ -54,7 +54,7 @@ export default function SlideWhereToday() {
           className="mt-10 max-w-2xl text-base md:text-lg text-bone-100/65 leading-snug"
         >
           Before we talk about where michigan.org goes next, let's look at how people
-          actually find a destination now — and what's quietly changed underneath it all.
+          actually find a destination now – and what's quietly changed underneath it all.
         </motion.p>
       </div>
     </Slide>

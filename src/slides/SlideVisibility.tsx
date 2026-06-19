@@ -14,14 +14,14 @@ const components = [
 const visibility = 'M 20 124 C 150 102, 320 70, 452 40'
 
 const metrics = [
-  { k: 'Share of voice', v: 'Own the discovery conversations.' },
+  { k: 'Share of voice', v: 'Own travel conversations.' },
   { k: 'Perception', v: 'Own how Michigan is understood.' },
-  { k: 'Presence', v: 'Be wherever the traveler is asking.' },
-  { k: 'Authority', v: 'Fund the knowledge and the point of view.' },
+  { k: 'Presence', v: 'Be everywhere travelers are searching.' },
+  { k: 'Authority', v: 'Be the definitive voice on Michigan.' },
 ]
 
 export default function SlideVisibility() {
-  const meta = SLIDES[12]
+  const meta = SLIDES[9]
   const T_TITLE = 0.2
   const T_SUB = 0.6
   const T_CHART = 1.1
@@ -46,8 +46,9 @@ export default function SlideVisibility() {
           transition={{ duration: 0.7, ease, delay: T_SUB }}
           className="text-center text-ink-700/75 max-w-2xl mx-auto mt-4 text-base md:text-lg leading-snug"
         >
-          Old metrics measured your website. New metrics measure your destination's
-          presence in the world.
+          Old metrics measured your website.
+          <br />
+          New metrics measure your destination's presence in the world.
         </motion.p>
 
         {/* Chart: grey component lines summing into the ember visibility line */}
@@ -136,7 +137,7 @@ export default function SlideVisibility() {
             transition={{ duration: 0.6, ease, delay: T_METRICS - 0.15 }}
             className="font-mono text-[11px] tracking-looser uppercase text-ember-500 mb-3"
           >
-            The changing expectations of the DMO
+            The changing expectation of michigan.org
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {metrics.map((m, i) => (

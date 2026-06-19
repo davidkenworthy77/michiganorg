@@ -48,7 +48,7 @@ function RocketLine({ delay }: { delay: number }) {
 }
 
 export default function Slide07BotsOutnumber() {
-  const meta = SLIDES[8]
+  const meta = SLIDES[14]
   const T_TITLE = 0.2
   const T_GRID = 0.8
   const T_RIGHT = 1.6
@@ -82,7 +82,7 @@ export default function Slide07BotsOutnumber() {
                 53%
               </span>
               <span className="text-bone-100/65 text-sm leading-snug max-w-[200px]">
-                of web traffic was automated in 2025 — second year running.
+                of web traffic was automated in 2025 – second year running.
               </span>
             </motion.div>
           </div>

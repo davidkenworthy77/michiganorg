@@ -49,22 +49,6 @@ const cards: {
   points: string[]
 }[] = [
   {
-    title: 'Accessible',
-    icon: (
-      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" />
-        <circle cx="12" cy="6.6" r="1.4" fill="currentColor" stroke="none" />
-        <path d="M5.5 9.2c2 .8 4.2 1.2 6.5 1.2s4.5-.4 6.5-1.2" />
-        <path d="M12 10.4v4M12 14.4l-2.4 4.4M12 14.4l2.4 4.4" />
-      </svg>
-    ),
-    points: [
-      'Findable to machines — clean schema and structured data so LLMs and agents read Michigan accurately.',
-      'Accessible to people — WCAG 2.1 AA at 90%+, screen-reader and keyboard tested, monitored continuously.',
-      'Accessible in every sense of the word.',
-    ],
-  },
-  {
     title: 'Secure',
     icon: (
       <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -75,14 +59,30 @@ const cards: {
     points: [
       'Firewall, intrusion prevention and ongoing vulnerability scanning.',
       'High availability and uptime, load-balanced and monitored.',
-      'Privacy, consent and data governance — compliant as the rules change.',
+      'Privacy, consent and data governance – compliant as the rules change.',
       'Everything we do, we do within the rules.',
+    ],
+  },
+  {
+    title: 'Accessible',
+    icon: (
+      <svg viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" />
+        <circle cx="12" cy="6.6" r="1.4" fill="currentColor" stroke="none" />
+        <path d="M5.5 9.2c2 .8 4.2 1.2 6.5 1.2s4.5-.4 6.5-1.2" />
+        <path d="M12 10.4v4M12 14.4l-2.4 4.4M12 14.4l2.4 4.4" />
+      </svg>
+    ),
+    points: [
+      'Findable to machines – clean schema and structured data so LLMs and agents read Michigan accurately.',
+      'Accessible to people – WCAG 2.1 AA at 90%+, screen-reader and keyboard tested, monitored continuously.',
+      'Accessible in every sense of the word.',
     ],
   },
 ]
 
 export default function Slide12SecureByDesign() {
-  const meta = SLIDES[13]
+  const meta = SLIDES[10]
   const T_TITLE = 0.2
   const T_SCENE = 0.8
   const T_CARDS = 1.7

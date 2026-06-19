@@ -16,16 +16,16 @@ interface Member {
 // Order roughly follows the wave cues in the talk track.
 const members: Member[] = [
   { role: 'Digital & AI', name: 'Dave', line: 'A voice for where this industry is heading.', photo: '/logos/David.jpg' },
-  { role: 'Content & Experience', name: 'Sean', line: 'Making Michigan show up where the answers get formed.', photo: '/logos/sean.jpg' },
+  { role: 'Content & Experience', name: 'Sean', line: 'Making Michigan show up where the answers are formed.', photo: '/logos/sean.jpg' },
   { role: 'Account service', name: 'Casey', line: 'Your day-to-day partner, keeping every workstream in lockstep.', photo: '/logos/Casey.jpg' },
   { role: 'Global leadership', name: 'Katie', line: 'Betting our future on this space, in love with the industry.', photo: '/logos/Katie.jpg' },
   { role: 'Creative', name: 'Rick', line: 'Every pixel unmistakably Pure Michigan.', photo: '/logos/rick.jpg' },
-  { role: 'Growth & partnership', name: 'Justin', line: "In it for the long game.", photo: '/logos/justin.jpg' },
+  { role: 'Content Strategy', name: 'Sarika', line: 'Driving the future vision of content and AIO.', photo: '/logos/Sarika.jpg' },
 ]
 
 // The wider-team row beneath the cards. Real photos first, then placeholders.
 const rowFaces: { src?: string; name?: string }[] = [
-  { src: '/logos/Sarika.jpg', name: 'Sarika' },
+  { src: '/logos/justin.jpg', name: 'Justin' },
   { src: '/logos/Anna.jpg', name: 'Anna' },
   { src: '/logos/craig.jpg', name: 'Craig' },
   { src: '/logos/stephen.jpg', name: 'Stephen' },

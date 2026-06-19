@@ -12,7 +12,7 @@ const values = [
 ]
 
 export default function Slide04TeamValues() {
-  const meta = SLIDES[3]
+  const meta = SLIDES[12]
   const T_EYEBROW = 0.2
   const T_VALUES = 0.7
   const T_FLIP = T_VALUES + values.length * 0.45 + 0.5

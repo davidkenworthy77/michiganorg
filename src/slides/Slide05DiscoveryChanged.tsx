@@ -18,7 +18,7 @@ const surfaces = [
 ]
 
 export default function Slide05DiscoveryChanged() {
-  const meta = SLIDES[7]
+  const meta = SLIDES[13]
   const T_TITLE = 0.2
   const T_THEN = 0.8
   const T_ARROW = 1.3
@@ -111,7 +111,7 @@ export default function Slide05DiscoveryChanged() {
               </motion.div>
             </div>
             <div className="text-sm text-ink-700/70 leading-snug mt-4">
-              Trips now start in the answer — and travelers arrive expecting a conversation built for them.
+              Trips now start in the answer – and travelers arrive expecting a conversation built for them.
             </div>
           </div>
         </div>

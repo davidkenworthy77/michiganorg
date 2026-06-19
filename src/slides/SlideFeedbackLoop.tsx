@@ -56,7 +56,7 @@ const cy = H / 2
 const radius = 140
 
 export default function SlideFeedbackLoop() {
-  const meta = SLIDES[11]
+  const meta = SLIDES[8]
 
   const T_TITLE = 0.2
   const T_RING = 0.9

@@ -16,12 +16,12 @@ const facts: Fact[] = [
   {
     value: '2021',
     headline: 'Agency of record',
-    sub: 'Pure Michigan since 2021 — strategy, paid media, creative, brand, research and analytics. Five years in.',
+    sub: 'Pure Michigan since 2021 – strategy, paid media, creative, brand, research and analytics. Five years in.',
   },
   {
     value: '5',
     headline: 'Michigan DMOs',
-    sub: 'Pure Michigan, Visit Detroit, Destination Ann Arbor, Traverse City and Grand Rapids — plus 20+ Pure Michigan partner collaborations. We know the regional dynamics.',
+    sub: 'Pure Michigan, Visit Detroit, Destination Ann Arbor, Traverse City Tourism and Experience Grand Rapids – plus more than 20 Pure Michigan partner collaborations. We know the regional dynamics.',
   },
   {
     value: '30',
