@@ -24,9 +24,9 @@ const facts: Fact[] = [
     sub: 'Pure Michigan, Visit Detroit, Destination Ann Arbor, Traverse City Tourism and Experience Grand Rapids – plus more than 20 Pure Michigan partner collaborations. We know the regional dynamics.',
   },
   {
-    value: '30',
-    headline: 'On this account',
-    sub: 'Talented people right here in the state, on Michigan today.',
+    value: '7+',
+    headline: 'Senior thought leaders',
+    sub: 'who have collaborated with Pure Michigan leadership to generate economic impact since 2021.',
   },
 ]
 
